@@ -1,2 +1,3 @@
 # CV
-My resume in standard form
+
+CV built with docsify
