@@ -139,14 +139,6 @@ Management: `Kanban Methodology` `Scrum`
 
 ## Education
 
-|**Bachelor of Technology on Electronic and Communication Engineering**|->_2011-2015_|
-|---|---|
-|**College**|Hyderabad Institute of Technology and Management|->_2011-2015_|
-|**University**|JNTUH|
-|**Location**|_Hyderabad, India_|
-
-## Education
-
 ### Jawaharlal Nehru Technological University Hyderabad
 ->_Hyderabad, India_
 
