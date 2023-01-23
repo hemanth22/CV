@@ -151,6 +151,7 @@ Management: `Kanban Methodology` `Scrum`
 ->_Hyderabad, India_
 
 |**Bachelor of Technology on Electronic and Communication Engineering**|->_2011-2015_|
+|---|---|
 
 ## Personal Details
 
