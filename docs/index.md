@@ -28,7 +28,7 @@ We have to create some tool which can help to perform live verification even thr
 **Solution**  
 
 - Written a python program to execute in commmand line to read XML Rest API  
-  call the API and display the output in the command line.  
+  call the API and display the output in the command line and sent output to internal email as a verification.  
 
 ##### **Certifications**  
 
