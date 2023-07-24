@@ -6,7 +6,7 @@ Site Reliability Engineer at [DBS Tech India](https://www.dbs.com/dbstechindia/i
 ### [DBS Tech India](https://www.dbs.com/dbstechindia/index.html)
 ->_Hyderabad, India_
 
-|**eFx Application Specialist Developer**|->_Aug 2021 to Present_|
+|**eFx Application Site Reliability Engineer**|->_Aug 2021 to Present_|
 |---|---|
 
 - Debugging and Supporting front office forex trade tickets issues in production.  
