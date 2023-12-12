@@ -95,13 +95,13 @@ but it display 10 records only at once, but we want to check 150 files at once.
 
 **Problem Statement**  
 
-We have few critical jobs in production, we need to check manually in autosys UI,  
+We have few critical autosys jobs in production, we need to check manually in autosys UI,  
 due to some code issue, job doesn't fail properly and it will be in running state in autosys UI,  
 even the fix is applied behavior job is still same, but it need to be verified on daily basis.  
 
 **Solution**  
 
-- For this issue, i have written a lucence query, that will fetch the jobs status from elasticsearch 
+- For this issue, i have written a lucence query, that will fetch the jobs status from elasticsearch which is being pushed by application team.
 - creates a report in mail and sends mail specific intervals of time and end of day report.
 
 **Problem Statement**  
@@ -111,9 +111,17 @@ But sometime upstreams sent zero data files and half processed files which was c
 
 **Solution**  
 
-- First we took average file size which we recieve from upstream every month.
+- First we took average file size which we recieve from upstream every month and consider 75% of the average size of file
 - Using autosys, we have create a filewatcher to monitor zero data and  
-  partial data file size and fail it to prevent data integration and get an alert to the team  
+  partial data file size and fail it to prevent data integration and get an alert to the team
+
+  ```jil
+  insert_job: fw_job
+  job_type: FW
+  watch_file: /tmp/watch_file.log
+  watch_file_min_size: 15728640
+  watch_interval: 60
+  ```
 
 ##### **Certifications**
 ![DevOps](https://raw.githubusercontent.com/hemanth22/Images/master/devops_image.png)
