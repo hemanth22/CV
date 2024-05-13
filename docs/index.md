@@ -81,11 +81,11 @@ We have to check manually as per the Finance team request, or else it will impac
 - sends difference of data through mail to upstream to confirm, if data quality difference is fine
 - if fine, we will integrate upstream data, or else upstream will verify the data again.
 
-**Problem Statement:**
+**Problem Statement:**  
 __Challenge:__ Daily file transfers to the file transfer system (IBM SFG) required manual verification.  
 __Issue:__ The UI displayed only 10 records at once, making it cumbersome to check 150 files simultaneously.  
 
-**Solution:**
+**Solution:**  
 1. __Automated Data Retrieval:__  
 - Developed a __Python program__ to connect to the file transfer system.  
 - Retrieved data from the system, which was returned in __JSON format__.  
@@ -102,12 +102,12 @@ __Results:__
 - __Enhanced Visibility:__ The automated report allowed us to monitor 150 files at once, improving efficiency.  
 - __Proactive Alerts:__ Immediate email notifications enabled timely action based on file transfer statuses.  
 
-**Problem Statement**
+**Problem Statement**  
 
 __Challenge:__ Critical Autosys jobs in production were not failing properly due to code issues.  
 __Issue:__ Jobs remained in a running state in the Autosys UI even after applying fixes, leading to manual verification requirements.  
 
-**Solution**
+**Solution**  
 
 1. __Lucene Query for Elasticsearch:__  
 
