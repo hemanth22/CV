@@ -126,7 +126,7 @@ __2. Implementation Using Autosys:__
      - Failed the integration process for such files to prevent reconciliation issues.
      - Generated an __alert__ to notify the team immediately.
 
-__Results:__
+__Results:__  
 __Improved Data Integrity:__ By preventing the integration of incomplete or zero data files, we significantly reduced reconciliation breaks.  
 __Enhanced Efficiency:__ The automated filewatcher ensured timely detection and proactive handling of problematic files.  
 
