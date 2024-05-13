@@ -81,17 +81,26 @@ We have to check manually as per the Finance team request, or else it will impac
 - sends difference of data through mail to upstream to confirm, if data quality difference is fine
 - if fine, we will integrate upstream data, or else upstream will verify the data again.
 
-**Problem Statement**  
+**Problem Statement:**
+__Challenge:__ Daily file transfers to the file transfer system (IBM SFG) required manual verification.  
+__Issue:__ The UI displayed only 10 records at once, making it cumbersome to check 150 files simultaneously.  
 
-On daily basis, we send multiple files to file transfer system (i.e. UI created with IBM SFG),  
-through this portal, we can see number of files are sent and timing details,  
-but it display 10 records only at once, but we want to check 150 files at once.  
+**Solution:**
+1. __Automated Data Retrieval:__  
+- Developed a __Python program__ to connect to the file transfer system.  
+- Retrieved data from the system, which was returned in __JSON format__.  
+- __Efficient Parsing:__
+  - Parsed the JSON data into a __tabular format__ organized by region.  
+  - Extracted relevant details such as file names, timestamps, and status.  
+  - Created a comprehensive report for further analysis.  
+2. __Automated Reporting:__  
+- Generated a __daily end-of-day report__ summarizing all file transfers.  
+- Segregated files by region and displayed their status (successful, partial, or failed).  
+- Sent the final report via email to the team.  
 
-**Solution**  
-
-- I have created a python program to create a daily end of the day report, to connect to file transfer system
-- get the data from file transfer system, but response will be in json format
-- we parse the json data into table format in regional wise and final mail is sent to our team.
+__Results:__  
+- __Enhanced Visibility:__ The automated report allowed us to monitor 150 files at once, improving efficiency.  
+- __Proactive Alerts:__ Immediate email notifications enabled timely action based on file transfer statuses.  
 
 **Problem Statement**
 
