@@ -77,7 +77,7 @@ __Issue:__ The existing sequencing logic was failing to manage the order of data
 **Solution:**  
 
 1. Python Program for Sequencing Logic:  
-   - Developed a Python program to modify the sequencing logic within the 10GB file.  
+   - Developed a __Python program__ to modify the sequencing logic within the 10GB file.  
    - Analyzed the existing logic and identified areas for improvement.  
    - Implemented changes to ensure proper data order and sequencing.  
    - Saved the modified file with the corrected sequencing.  
