@@ -106,14 +106,29 @@ even the fix is applied behavior job is still same, but it need to be verified o
 
 **Problem Statement**  
 
-We get files from upstream which contains critical data for processing of daily end of month report for india regulatory reporting.  
-But sometime upstreams sent zero data files and half processed files which was creating accounting reconciliation breaks for end of month.  
+__Challenge:__ We receive critical data files from upstream for daily end-of-month reports related to India’s regulatory reporting.  
+__Issue:__ Sometimes, the upstream sent zero data files or half-processed files, leading to accounting reconciliation breaks at the end of the month.
 
 **Solution**  
 
-- First we took average file size which we recieve from upstream every month and consider 75% of the average size of file
-- Using autosys, we have create a filewatcher to monitor zero data and  
-  partial data file size and fail it to prevent data integration and get an alert to the team
+__1. File Size Analysis:__  
+
+   - Calculated the average file size received from upstream every month.
+   - Considered 75% of the average file size as a threshold.
+
+__2. Implementation Using Autosys:__  
+
+   - Created a __file watcher__ using Autosys.
+   - Monitored incoming files for two conditions:
+     - __Zero Data Files:__ Detected when the file size was zero.
+     - __Partial Data Files:__ Detected when the file size was less than 75% of the average size
+   - __Action Taken:__
+     - Failed the integration process for such files to prevent reconciliation issues.
+     - Generated an __alert__ to notify the team immediately.
+
+__Results:__
+__Improved Data Integrity:__ By preventing the integration of incomplete or zero data files, we significantly reduced reconciliation breaks.  
+__Enhanced Efficiency:__ The automated filewatcher ensured timely detection and proactive handling of problematic files.  
 
   ```jil
   insert_job: fw_job
