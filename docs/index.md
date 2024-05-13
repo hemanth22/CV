@@ -56,17 +56,28 @@ We have to create some tool which can help to perform live verification even thr
 
 #### challenges solved  
 
-**Problem Statement**  
+**Problem Statement:**  
 
-We have production where it generate around 10GB of file, which contains financial data,  
-but there is a sequencing logic for inside file which was failing to manage sequencing inside the file.  
-So it is difficult to open the file change sequence manually.  
+__Challenge:__ In production, a 10GB file containing financial data had an intricate sequencing logic.  
+__Issue:__ The existing sequencing logic was failing to manage the order of data within the file, making manual inspection and sequence adjustments difficult.  
 
+**Solution:**  
 
-**Solution**  
+1. Python Program for Sequencing Logic:  
+   - Developed a Python program to modify the sequencing logic within the 10GB file.  
+   - Analyzed the existing logic and identified areas for improvement.  
+   - Implemented changes to ensure proper data order and sequencing.  
+   - Saved the modified file with the corrected sequencing.  
+2. Transition to .NET (Dotnet):  
+   - __Learned .NET (Dotnet)__ as per project requirements.  
+   - Re-implemented the sequencing logic in a __Dotnet program__.  
+   - Ensured compatibility with the existing production environment.  
+   - Successfully Executed logic to correct file.  
 
-- To solve this issue, i have written a python program to change the sequencing logic in the 10GB file and save it.  
-- As per project requirement, i have learnt dotnet and re-written the logic in dotnet program and implemented in production.  
+__Results:__  
+
+__Seamless Data Processing:__ The new sequencing logic resolved issues related to data order and improved file integrity.  
+__Reduced Manual Effort:__ Automation eliminated the need for manual sequence adjustments, enhancing efficiency.  
 
 **Problem Statement:**  
 
