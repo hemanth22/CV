@@ -157,9 +157,9 @@ __Results:__
   watch_interval: 60
   ```
 
-##### **Certifications**
+#### Certifications
 ![DevOps](https://rawcdn.githack.com/hemanth22/Images/4b62571eba1a330d418cc34fc444875348cb880b/DevOpsCertificate.jpg)  
-#### [DevOps Certificate link](https://raw.githubusercontent.com/hemanth22/Images/master/DevOpsCertificate.jpg)
+#### [DevOps Certificate link](https://rawcdn.githack.com/hemanth22/Images/4b62571eba1a330d418cc34fc444875348cb880b/DevOpsCertificate.jpg)
 
 
 |**Support Engineer**|->_August 2016 to April 2019_|
