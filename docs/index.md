@@ -86,8 +86,10 @@ __Issue:__ The upstream application lacked an option to verify these data differ
     - If the data quality difference was acceptable:  
       - Integrated the upstream data into the system.  
     - If not:  
-      - Upstream verified the data again before integration.  
+      - Upstream verified the data again before integration.
+
 __Results:__  
+
 __Automated Validation:__ The Python program streamlined data comparison, reducing manual effort.  
 __Proactive Communication:__ Immediate email alerts ensured timely resolution based on data quality confirmation.  
 
