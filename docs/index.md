@@ -93,16 +93,26 @@ but it display 10 records only at once, but we want to check 150 files at once.
 - get the data from file transfer system, but response will be in json format
 - we parse the json data into table format in regional wise and final mail is sent to our team.
 
-**Problem Statement**  
+**Problem Statement**
 
-We have few critical autosys jobs in production, we need to check manually in autosys UI,  
-due to some code issue, job doesn't fail properly and it will be in running state in autosys UI,  
-even the fix is applied behavior job is still same, but it need to be verified on daily basis.  
+__Challenge:__ Critical Autosys jobs in production were not failing properly due to code issues.  
+__Issue:__ Jobs remained in a running state in the Autosys UI even after applying fixes, leading to manual verification requirements.  
 
-**Solution**  
+**Solution**
 
-- For this issue, i have written a lucence query, that will fetch the jobs status from elasticsearch which is being pushed by application team.
-- creates a report in mail and sends mail specific intervals of time and end of day report.
+1. __Lucene Query for Elasticsearch:__  
+
+- Developed a Lucene query to fetch job statuses from Elasticsearch.
+- Leveraged data pushed by the application team into Elasticsearch.
+
+- __Automated Reporting:__  
+
+  - Created a report summarizing job statuses.  
+  - Sent scheduled email reports at specific intervals and an end-of-day report.  
+
+__Results:__
+- __Automated Verification:__ The Lucene query ensured timely status checks without manual intervention.  
+- __Proactive Alerts:__ Immediate email alerts enabled prompt action based on job status changes.  
 
 **Problem Statement**  
 
