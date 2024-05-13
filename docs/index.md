@@ -158,7 +158,7 @@ __Results:__
   ```
 
 ##### **Certifications**
-![DevOps](https://raw.githubusercontent.com/hemanth22/Images/master/devops_image.png)
+![DevOps](https://rawcdn.githack.com/hemanth22/Images/4b62571eba1a330d418cc34fc444875348cb880b/DevOpsCertificate.jpg)  
 #### [DevOps Certificate link](https://raw.githubusercontent.com/hemanth22/Images/master/DevOpsCertificate.jpg)
 
 
