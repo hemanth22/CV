@@ -68,24 +68,37 @@ So it is difficult to open the file change sequence manually.
 - To solve this issue, i have written a python program to change the sequencing logic in the 10GB file and save it.  
 - As per project requirement, i have learnt dotnet and re-written the logic in dotnet program and implemented in production.  
 
+**Problem Statement:**  
 
-**Problem Statement**  
+__Challenge:__ In production, there was a significant difference between the number of lines and file size of data from the previous month compared to the current month.  
+__Issue:__ The upstream application lacked an option to verify these data differences, leading to manual checks upon Finance team requests. Failure to address this issue could impact monthly financial regulatory reporting.  
 
-Once there was a production issue, there was huge difference between number of lines and filesize of data from previous and current month.  
-Upstreams application don't have any option to check on the difference of the file.  
-We have to check manually as per the Finance team request, or else it will impacting Monthly regulatory reporting.  
+**Solution:**  
 
-**Solution**  
+1. __Automated Data Comparison:__  
 
-- I have created a python program that will compare the data between last working day of the last month data and last working of the current month data folders
-- sends difference of data through mail to upstream to confirm, if data quality difference is fine
-- if fine, we will integrate upstream data, or else upstream will verify the data again.
+  - Developed a __Python program__ to compare data between:
+    - __Last working day of the last month’s data folder__  
+    - __Last working day of the current month’s data folder__  
+  - __Data Quality Verification:__  
+    - Calculated the difference in data (e.g., line count, file size) between the two time periods.  
+    - Sent the data difference report via email to the upstream team for confirmation.  
+    - If the data quality difference was acceptable:  
+      - Integrated the upstream data into the system.  
+    - If not:  
+      - Upstream verified the data again before integration.  
+__Results:__  
+__Automated Validation:__ The Python program streamlined data comparison, reducing manual effort.  
+__Proactive Communication:__ Immediate email alerts ensured timely resolution based on data quality confirmation.  
+
 
 **Problem Statement:**  
+
 __Challenge:__ Daily file transfers to the file transfer system (IBM SFG) required manual verification.  
 __Issue:__ The UI displayed only 10 records at once, making it cumbersome to check 150 files simultaneously.  
 
 **Solution:**  
+
 1. __Automated Data Retrieval:__  
 - Developed a __Python program__ to connect to the file transfer system.  
 - Retrieved data from the system, which was returned in __JSON format__.  
