@@ -18,17 +18,30 @@ Troubleshooting in OpenShift
 
 #### challenges solved  
 
-**Problem Statement**  
+**Problem Statement:**  
 
-For ET2 Forex Application, one of the module called RFQ (Request for Quote) program,  
-we perform live verification using __SOAP UI__ and __PostMan__ with XML Rest API,  
-but organization discontinued the software for the current project.  
-We have to create some tool which can help to perform live verification even through command line or GUI.  
+__Challenge:__ The organization discontinued the use of SOAP UI and PostMan for live verification of the RFQ (Request for Quote) program.  
 
-**Solution**  
+__Issue:__ The absence of suitable tools hindered the ability to perform live verification efficiently.  
 
-- Written a python program to execute in commmand line to read XML Rest API  
-  call the API and display the output in the command line and sent output to internal email as a verification.  
+**Solution:**  
+
+1. __Custom Python Program for Live Verification:__  
+   - Developed a __Python program__ to execute from the command line.  
+   - __XML Rest API Interaction:__  
+     - Read data from the XML Rest API.  
+     - Called the API endpoints relevant to the RFQ module.  
+     - Captured the API response.  
+   - __Command Line Output:__  
+     - Displayed the API response in the command line interface.  
+     - Enabled real-time verification of RFQ data.  
+   - __Automated Email Verification:__  
+     - Sent the API response output to an internal email address for live verification.  
+
+__Results:__  
+
+__Efficient Live Verification:__ The custom Python program streamlined the RFQ verification process.  
+__Proactive Communication:__ Immediate email notifications facilitated timely confirmation by the team.  
 
 ##### **Certifications**  
 
