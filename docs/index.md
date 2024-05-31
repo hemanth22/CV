@@ -20,6 +20,27 @@ Troubleshooting in OpenShift
 
 **Problem Statement:**  
 
+__Challenge:__ The application reached the decommission stage, but the Dev team was already out of budget for further regression testing.  
+__Issue:__ Despite the application being decommissioned, six tier-1 App Services still needed to run until they were migrated to a different application. To maintain server security and vulnerability-free status, we had to upgrade from RHEL Version 7.9 to RHEL Version 8.8. However, the Dev team lacked the budget for extensive regression testing.  
+**Solution:**  
+
+1. __Custom Python Program for Automated Regression:__
+   - Developed a Python program to execute from the command line.
+   - __XML Rest API Interaction:__
+     - Read data from an XML Rest API designed for 40 test cases.
+     - Called the API endpoints for all 40 test cases.
+     - Captured the API responses for each test case.
+   - __Automated Email Verification:__
+     - Collated the API responses on the server.
+     - Sent consolidated responses via email.
+     - Printed the API responses in a table format, organized by test case.
+
+__Results:__  
+__Efficient Automation:__ Automated regression testing reduced manual effort significantly—from 5 days to just 1 day.  
+__Accelerated Sign-off Process:__ Faster regression testing facilitated timely sign-off for server RHEL upgrade and patching.  
+
+**Problem Statement:**  
+
 __Challenge:__ The organization discontinued the use of SOAP UI and PostMan for live verification of the RFQ (Request for Quote) program.  
 
 __Issue:__ The absence of suitable tools hindered the ability to perform live verification efficiently.  
