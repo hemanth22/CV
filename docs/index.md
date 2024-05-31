@@ -46,6 +46,7 @@ __Challenge:__ The organization-wide migration of OpenShift from Cluster A to Cl
 __Issue:__ Manual shutdown and subsequent manual scaling of services in Cluster B was time-consuming and complex.  
 
 **Solution:**  
+
 __Automated Backup and Scaling Script:__  
 - Developed a set of __shell scripts__ to automate the migration process.  
 - __Backup of Pods:__  
