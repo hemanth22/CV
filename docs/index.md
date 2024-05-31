@@ -41,6 +41,28 @@ __Accelerated Sign-off Process:__ Faster regression testing facilitated timely s
 
 **Problem Statement:**  
 
+__Challenge:__ The organization-wide migration of OpenShift from Cluster A to Cluster B required efficient handling of 1000+ DeploymentConfigs and 3000+ Pods across 14 different projects.  
+
+__Issue:__ Manual shutdown and subsequent manual scaling of services in Cluster B was time-consuming and complex.  
+
+**Solution:**  
+__Automated Backup and Scaling Script:__  
+- Developed a set of __shell scripts__ to automate the migration process.  
+- __Backup of Pods:__  
+  - Created a script to take an __exact backup__ of the pod count for each DeploymentConfig using OpenShift command-line tools and `awk`.  
+  - Ensured accurate data preservation during the migration.  
+ - __Scaling Down and Up:__
+   - Wrote scripts to __scale down__ pods under DeploymentConfigs in Cluster A.
+   - After migration, scaled up the pods in Cluster B based on the previous backup.
+   - Reduced manual effort and ensured consistency.
+
+__Results:__
+
+__Efficient Automation:__ The script significantly reduced manual work, especially for scaling down services from the OpenShift UI.  
+__Streamlined Migration:__ Faster and more reliable migration process with minimal human intervention.  
+
+**Problem Statement:**  
+
 __Challenge:__ The organization discontinued the use of SOAP UI and PostMan for live verification of the RFQ (Request for Quote) program.  
 
 __Issue:__ The absence of suitable tools hindered the ability to perform live verification efficiently.  
