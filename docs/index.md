@@ -9,11 +9,12 @@ Site Reliability Engineer at [DBS Tech India](https://www.dbs.com/dbstechindia/i
 |**eFx Application Site Reliability Engineer**|->_Aug 2021 to Present_|
 |---|---|
 
-- Debugging and Supporting front office forex trade tickets issues in production.  
+- Debugging and Supporting front office forex trade tickets issues in production.
+- Writing Jenkins pipeline accordingly to deployment requirement
 - Deployment activity like deploying microservices in openshift, mariadb database patching, OS patching.
 Troubleshooting in OpenShift
 - Investigation, troubleshooting & debugging pricing issue, booking issue for vendor Applications ET2 (RET) , and other internal applications trading issues.
-- Automation of manual tasks / activity with shellscripting and python scripting in PROD and UAT, 
+- Automation of manual tasks / real time activity with shellscripting and python scripting in PROD and UAT, 
 - Scheduling and Co-ordinating OS, MariaDB, Openshift patching activity for production and UAT.
 
 #### challenges solved  
