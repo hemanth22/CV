@@ -3,10 +3,41 @@ Site Reliability Engineer at [DBS Tech India](https://www.dbs.com/dbstechindia/i
 
 ## Work Experience
 
+### [Standard Chartered Global Business Services](https://www.sc.com/in/business-global-banking/)
+->_Bangalore, India_
+
+|**Support Specialist**|->_March 2025 to Present_|
+|---|---|
+
+- I focused on enhancing system reliability and efficiency in high-frequency trading environments.  
+- Investigated and resolved critical pricing and booking issues for the S2BX Application and FIX Sessions.  
+- Handled incidents and change requests to maintain operational integrity in a high-frequency trading environment  
+- Leveraged automation with Ansible and Python to minimize manual processes and improve productivity.  
+
+
+#### challenges solved  
+
+**Problem Statement:**  
+
+__Challenge:__ The Java Web Start–based application frequently crashed or froze due to excessive cache buildup.
+__Issue:__ - The desktop application S2BX, running on Java 1.8, often experienced freezing, hanging, or performance degradation caused by large amounts of cached data.  
+
+**Solution:**  
+
+__PowerShell Script Development:__
+  - Created a PowerShell script to automatically clean up Java cache on user desktops.
+  - Documented script usage and shared guidelines with the team to ensure consistent adoption.
+
+__Results:__  
+__Efficient Automation:__  
+  - Reduced manual effort by automating cache cleanup.  
+  - Improved application stability and responsiveness.  
+  - Enhanced user productivity by minimizing downtime.  
+
 ### [DBS Tech India](https://www.dbs.com/dbstechindia/index.html)
 ->_Hyderabad, India_
 
-|**eFx Application Site Reliability Engineer**|->_Aug 2021 to Present_|
+|**eFx Application Site Reliability Engineer**|->_August 2021 to March 2025_|
 |---|---|
 
 - Debugging and Supporting front office forex trade tickets issues in production.
@@ -93,7 +124,7 @@ __Proactive Communication:__ Immediate email notifications facilitated timely co
 ![CKA](https://raw.githubusercontent.com/hemanth22/Images/master/cka-certified-kubernetes-administrator.png)  
 #### [CKA Certificate link](https://www.credly.com/badges/8d975c03-cb2a-454d-9f72-3d5c63e84561/public_url)
 
-### [Societe Generale Global Solution Centre](https://www.societegenerale.asia/en/country-details/country/india-2/)
+### [Societe Generale Global Solution Centre](https://wholesale.banking.societegenerale.com/en/about/locations/worldwide-details/office/bangalore-global-solution-centre-1/)
 ->_Bangalore, India_
 
 |**Specialist Software Engineer - DevOps**|->_April 2021 to August 2021_|
